@@ -232,6 +232,7 @@ async function compareQueries({
  * @returns {Promise<void>} on completion
  */
 function main(): Promise<void> {
+    console.error("testing logging");
   const argv = parseArgv() as ParsedArgs;
 
   const oldApiEnv = argvToApiEnv(argv[OLD_KEY], true);
